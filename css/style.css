@@ -643,6 +643,10 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3.482rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
