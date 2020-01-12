@@ -601,6 +601,8 @@ img {
   margin-bottom: 2.78rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 3;
   left: 0;
@@ -613,6 +615,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -643,11 +648,11 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1260px) {
   html {
-    font-size: 0.875rem; }
+    font-size: 12px; }
   .nav__item {
-    margin-right: 2.85rem; } }
+    margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
