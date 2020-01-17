@@ -595,7 +595,11 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 2rem; }
+  .swiper-slider-image {
+    margin-left: 50px;
+    margin-top: -13rem; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 2.42rem;
@@ -772,18 +776,24 @@ img {
       margin-bottom: 5.7rem; }
   .section-title--left {
     text-align: center; }
-  .section-title__dsp {
+  .section-title__text {
     font-size: 1rem;
     max-width: 21.78rem;
     height: 6.28rem;
-    margin-bottom: 2.57rem; }
+    margin: 0 auto 2.70rem; }
   .section-title__word {
     display: block;
     margin: auto; }
     .section-title__word::after {
       display: none; }
   .swiper-wrapper {
-    display: flex; } }
+    display: flex; }
+  .swiper-slider-image {
+    margin-top: 0; }
+  .mobile-order-top {
+    order: -1; }
+  .col-50 {
+    width: 100%; } }
 
 @media screen and (max-width: 570px) {
   .section-title__description {
