@@ -59,7 +59,11 @@ $(document).ready(function () {
       errorClass: "invalid",
       rules: {
         // строчное правило
-        userName: "required",
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
         userPhone: "required",
         // правило объект
         userEmail: {
@@ -68,7 +72,12 @@ $(document).ready(function () {
         }
       }, //сообщения
       messages: {
-        userName: "Имя обязательно",
+        userName: {
+          required: "Имя обязательно",
+          minlength: "Имя не короче 2 букв",
+          maxlength: "Имя не длиннее 15 букв"
+          
+        },
         userPhone: "Телефон обязателен",
         userEmail: {
           required: "Обязательно укажите email",
