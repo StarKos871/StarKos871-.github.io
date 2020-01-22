@@ -850,6 +850,15 @@ img {
     text-align: center;
     margin-bottom: 3.214rem;
     margin-top: 0; }
+    .footer__title--primary {
+      color: #E3B873;
+      max-width: 39.071rem;
+      max-height: 3.571rem;
+      line-height: 2rem;
+      margin: auto; }
+  .footer__text {
+    flex-wrap: wrap;
+    justify-content: center; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -875,6 +884,15 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 4rem;
+    min-height: 465px; }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    margin: 1.857rem 0  3.071rem 0; }
+    .footer__social--circle {
+      margin-right: 1.071rem; }
 
 @media screen and (max-width: 1260px) {
   html {
