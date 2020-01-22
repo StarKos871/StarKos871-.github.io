@@ -53,4 +53,32 @@ $(document).ready(function () {
 
 
     new WOW().init();
+
+    // Валидация формы
+    $('.modal__form').validate({
+      errorClass: "invalid",
+      rules: {
+        // строчное правило
+        userName: "required",
+        userPhone: "required",
+        // правило объект
+        userEmail: {
+          required: true,
+          email: true
+        }
+      }, //сообщения
+      messages: {
+        userName: "Имя обязательно",
+        userPhone: "Телефон обязателен",
+        userEmail: {
+          required: "Обязательно укажите email",
+          email: "Введите в формате: name@domain.com"
+        }
+      }
+    
+    });
+
+    // маска для номера телефона
+
+    $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___) ___-__-__"});
 });
