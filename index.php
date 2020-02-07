@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">  
   <script src="https://api-maps.yandex.ru/2.1/?apikey=72f029e9-00bc-4e09-b9b1-508b8f7fd387&lang=ru_RU" type="text/javascript">
   </script>
-  <title>Lesson_14</title>
+  <title>Design Repair</title>
 </head>
 <body>
   <header class="header">
@@ -494,7 +494,7 @@
           
           <div class="policy footer__policy">
             <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+            <label for="policy-checkbox" class="policy__label policy__label--center policy__label--left">я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
           <button class="button button--primary footer__button">
@@ -505,25 +505,31 @@
         <!-- /.form footer__form -->
       </div>
       <!-- footer-wrap -->
-    <div class="footer__text">
-      <h3 class="footer__title footer__title--primary">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h3>
-      
-    </div>
-    <!-- /.footer__title -->
-    <div class="footer__social">
-      <div class="footer__social--circle footer__circle--message"><a href="#">
-        <img src="img/message.svg" alt="message">
-      </a></div>
-      <!-- /.message -->
-      <div class="footer__social--circle footer__circle--insta"><a href="#">
-        <img src="img/icon-insta.svg" alt="insta">
-      </a></div>
-      <!-- /.insta -->
-    </div>
-      <div class="map footer__map" id="map">
+    <div class="footer__col">
+      <div class="footer__headline ">
+        <div class="footer__text">
+          <h3 class="footer__title footer__title--primary">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h3>
+          
+        </div>
+        <!-- /.footer__title -->
+        <div class="footer__social">
+          <div class="footer__social--circle footer__circle--message"><a href="#">
+            <img src="img/message.svg" alt="message">
+          </a></div>
+          <!-- /.message -->
+          <div class="footer__social--circle footer__circle--insta"><a href="#">
+            <img src="img/icon-insta.svg" alt="insta">
+          </a></div>
+          <!-- /.insta -->
+        </div>
+      </div>
+      <!-- /.footer__headline -->
+      <div class="map footer__map " id="map">
         
       </div>
-      <!-- /.map footer__map -->
+    <!-- /.map footer__map -->
+    </div>
+    <!-- /.footer_col -->
       
     </div>
     <!-- container -->
@@ -557,7 +563,7 @@
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
-      <form action="#" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
           <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
